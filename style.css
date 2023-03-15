@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Spot';
-  src: local('Spot-italic'), url('Spot-Italic.eot') format('opentype'), url('Spot-Italic.woff') format('woff');
-  src: local('Spot-Normal'), url('Spot-Normal.eot') format('opentype'), url('Spot-Normal.woff') format('woff');
+  src: local('Spot-italic'), url('./assets/fonts/Spot-Italic.eot') format('opentype'), url('./assets/fonts/Spot-Italic.woff') format('woff');
+  src: local('Spot-Normal'), url('./assets/fonts/Spot-Normal.eot') format('opentype'), url('./assets/fonts/Spot-Normal.woff') format('woff');
 }
 
 *,
