@@ -1,3 +1,7 @@
+@import './login.css';
+@import './sign-up.css';
+@import './home.css';
+@import './welcome.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 @font-face {
@@ -76,13 +80,23 @@ h3 {
   font-family: 'Spot';
 }
 
+.btn a {
+  text-decoration: none;
+}
+
+.btn-full a {
+  color: var(--bg-color);
+}
+
+.btn-outline a {
+  color: var(--primary-color);
+}
+
 .btn-full {
   background-color: var(--primary-color);
-  color: var(--bg-color);
 }
 .btn-outline {
   background-color: transparent;
-  color: var(--primary-color);
 }
 
 .btn-categories {
