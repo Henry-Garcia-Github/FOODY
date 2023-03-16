@@ -41,12 +41,6 @@
   bottom: -1rem;
   left: -0.5rem;
 }
-/* #connexionButton:hover {
-  border: solid #ff5486 1px;
-  color: #ff5486;
-  background-color: #fffaf5;
-  transition: 0.5s all ease-in-out;
-} */
 
 @media screen and (min-width: 768px) {
   .bg-color {
@@ -61,4 +55,3 @@
   }
 }
 
-/* top 672px */
