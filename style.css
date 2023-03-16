@@ -22,7 +22,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
-  padding: 0 4rem;
+  padding: 0 2rem;
   height: 100%;
   overflow-y: hidden;
 }
@@ -120,7 +120,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
   body {
-    padding: 0 2rem;
+    padding: 0 4rem;
   }
 
   .btn {
