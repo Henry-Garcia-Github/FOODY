@@ -3,6 +3,7 @@
   justify-content: center;
   min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .bg-color {
@@ -37,6 +38,8 @@
 .sauce {
   max-width: 70px;
   position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,7 +51,7 @@
   }
   .sauce {
     max-width: 150px;
-    bottom: -2rem;
-    left: 2rem;
+    bottom: 0;
+    left: 0;
   }
 }
