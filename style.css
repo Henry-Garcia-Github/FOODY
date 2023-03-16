@@ -24,6 +24,7 @@ body {
   background-color: var(--bg-color);
   padding: 0 2rem;
   height: 100%;
+  min-height: 100vh;
   overflow-y: hidden;
 }
 
