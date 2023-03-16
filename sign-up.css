@@ -1,0 +1,38 @@
+.namesurname {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.bodypage {
+  background-image: url("./assets/images/bg-signup-mobile.jpg");
+}
+
+.titleSignUp {
+  padding-bottom: 25px;
+}
+
+.formSignUp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.btn-signup {
+  margin: auto;
+}
+
+.input-small {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .bodypage {
+    background-image: url("./assets/images/bg-signup-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
