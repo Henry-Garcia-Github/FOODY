@@ -125,7 +125,7 @@ input {
   color: var(--text-color);
   border-radius: 6rem;
   padding: 1rem;
-  width: 270px;
+  width: 100%;
   border: none;
 }
 
