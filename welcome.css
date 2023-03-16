@@ -16,6 +16,7 @@ nav .btn-group {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .welcome-section .welcome-content {
@@ -35,8 +36,31 @@ nav .btn-group {
   display: none;
 }
 
+.welcome-section .welcome-content button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .welcome-section .welcome-image img {
   max-width: 600px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.social img {
+  width: 2rem;
+  display: block;
+  transition: var(--transition);
+}
+
+.social img:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -45,7 +69,8 @@ nav .btn-group {
   }
 
   nav .btn-group {
-    display: initial;
+    display: flex;
+    gap: 1rem;
   }
 
   .welcome-section {
@@ -74,13 +99,17 @@ nav .btn-group {
     color: var(--primary-color);
   }
 
-  welcome-section .welcome-content form {
+  .welcome-section .welcome-content form {
     display: flex;
     gap: 1rem;
   }
 
   .welcome-section .welcome-content form input {
     display: initial;
+  }
+
+  .welcome-section .welcome-content button {
+    margin: 0;
   }
 
   .welcome-btn {
