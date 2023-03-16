@@ -22,7 +22,9 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-color);
-  padding: 0 2rem;
+  padding: 0 4rem;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 :root {
@@ -30,6 +32,8 @@ body {
   --bg-color: #fffaf5;
   --text-color: #060d0f;
   --bg-input: #e8e8e8;
+
+  --transition: all 200ms ease-in-out;
 }
 
 img {
@@ -74,6 +78,7 @@ h3 {
 }
 
 .btn {
+  display: block;
   border-radius: 6rem;
   border: 1px solid var(--primary-color);
   width: 270px;
@@ -82,14 +87,17 @@ h3 {
   font-family: 'Spot';
 }
 
+.btn,
 .btn a {
   text-decoration: none;
 }
 
+.btn-full,
 .btn-full a {
   color: var(--bg-color);
 }
 
+.btn-outline,
 .btn-outline a {
   color: var(--primary-color);
 }
@@ -111,6 +119,10 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding: 0 2rem;
+  }
+
   .btn {
     width: 400px;
   }
