@@ -6,6 +6,7 @@
 
 .bodypage {
   background-image: url("./assets/images/bg-signup-mobile.jpg");
+  background-size: cover;
 }
 
 .titleSignUp {
