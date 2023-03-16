@@ -1,3 +1,7 @@
+@import './login.css';
+@import './sign-up.css';
+@import './home.css';
+@import './welcome.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 @font-face {
