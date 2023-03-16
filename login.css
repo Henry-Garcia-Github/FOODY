@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-color {
+  background-image: url('./assets/images/bgMobile.jpg');
+  background-size: cover;
+}
+
+.formConnexion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.mdp {
+  text-align: end;
+}
+
+.titleLogin {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.sauce {
+  max-width: 70px;
+  position: absolute;
+  bottom: -1rem;
+  left: -0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-color {
+    background-image: url('./assets/images/bgDesktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+  }
+  .sauce {
+    max-width: 150px;
+    bottom: -2rem;
+    left: 2rem;
+  }
+}
