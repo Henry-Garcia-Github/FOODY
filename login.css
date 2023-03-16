@@ -7,7 +7,7 @@
 }
 
 .bg-color {
-  background-image: url("./assets/images/bgMobile.jpg");
+  background-image: url('./assets/images/bgMobile.jpg');
   background-size: cover;
 }
 
@@ -44,7 +44,7 @@
 
 @media screen and (min-width: 768px) {
   .bg-color {
-    background-image: url("./assets/images/bgDesktop.jpg");
+    background-image: url('./assets/images/bgDesktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -100px;
@@ -52,6 +52,6 @@
   .sauce {
     max-width: 150px;
     bottom: -2rem;
+    left: 2rem;
   }
 }
-
