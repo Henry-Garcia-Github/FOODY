@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <script src="script.js"></script>
+  <body class="bg-color">
+    <div class="container">
+      <main>
+        <div class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo of the foodie application"
+            class="logo"
+          />
+        </div>
+        <form class="formConnexion">
+          <h1 class="titleLogin">SE CONNECTER</h1>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nom d'utilisateur *"
+          />
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Mot de passe *"
+          />
+          <p class="mdp">Mot de passe oublié ?</p>
+          <div class="button">
+            <button class="btn btn-full" type="submit">
+              <a href="./home.html">VALIDER</a>
+            </button>
+            <button class="btn btn-outline" type="submit">
+              <a href="./signup.html">M'INSCRIRE</a>
+            </button>
+          </div>
+          <img class="sauce" src="./assets/images/sauce.png" alt="sauce" />
+        </form>
+      </main>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
