@@ -10,7 +10,6 @@ const foodCategories = [
 ]
 
 for (let i = 0; i < foodCategories.length; i++) {
-    console.log("salut")
     const buttonCategories = document.createElement("div");
     const titleCategories = document.createElement("p");
     buttonCategories.classList.add("btn-categories");
