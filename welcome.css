@@ -2,6 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeUp 1s ease-in-out;
 }
 
 nav .logo-welcome {
@@ -58,6 +59,19 @@ nav .btn-group {
   width: 2rem;
   display: block;
   transition: var(--transition);
+}
+
+.social img:nth-child(1) {
+  animation: fadeUp 1s ease-in-out;
+  animation-delay: 100ms;
+}
+.social img:nth-child(2) {
+  animation: fadeUp 1s ease-in-out;
+  animation-delay: 200ms;
+}
+.social img:nth-child(3) {
+  animation: fadeUp 1s ease-in-out;
+  animation-delay: 300ms;
 }
 
 .social img:hover {
