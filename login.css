@@ -7,8 +7,9 @@
 }
 
 .bg-color {
-  background-image: url('./assets/images/bgMobile.jpg');
+  background-image: url('./assets/images/connexion-mobile-background.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .formConnexion {
@@ -37,9 +38,13 @@
 
 @media screen and (min-width: 768px) {
   .bg-color {
-    background-image: url('./assets/images/bgDesktop.jpg');
+    background-image: url('./assets/images/login-background-desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -100px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .bg-color {
+    background-size: contain;
   }
 }
