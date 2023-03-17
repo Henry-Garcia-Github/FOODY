@@ -38,6 +38,14 @@
     margin: 4rem auto;
   }
 
+  .button {
+    width: 100%;
+  }
+
+  .button .btn {
+    width: 100%;
+  }
+
   .formSignUp button {
     margin-top: 1.5rem;
   }
