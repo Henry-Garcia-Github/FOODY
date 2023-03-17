@@ -66,6 +66,17 @@
 .heart-icon {
   max-width: 200px;
   margin-bottom: 2rem;
+  animation: bounce 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(-4deg);
+  }
 }
 
 @media screen and (max-width: 375px) {
