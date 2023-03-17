@@ -1,0 +1,89 @@
+.namesurname {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.bodypage {
+  background-image: url('./assets/images/bg-signup-mobile.jpg');
+  background-size: cover;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.titleSignUp {
+  padding-bottom: 25px;
+}
+
+.formSignUp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.namesurname {
+  width: 100%;
+}
+
+.formSignUp button,
+.formSignUp input {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .formSignUp {
+    max-width: 400px;
+    margin: 4rem auto;
+  }
+
+  .formSignUp button {
+    margin-top: 1.5rem;
+  }
+}
+
+.btn-signup {
+  margin: auto;
+}
+
+.input-small {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .bodypage {
+    background-image: url('./assets/images/bg-signup-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.footer-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-icon {
+  max-width: 200px;
+  margin-bottom: 2rem;
+  animation: bounce 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heart-icon {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+  }
+}
