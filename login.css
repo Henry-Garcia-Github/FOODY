@@ -84,6 +84,10 @@
   margin-bottom: 1rem;
 }
 
+.open-popup {
+  text-align: right;
+}
+
 .btn-popup {
   border: none;
   margin-top: 1rem;
