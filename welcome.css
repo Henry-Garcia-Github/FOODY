@@ -59,6 +59,7 @@ nav .btn-group {
   width: 2rem;
   display: block;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .social img:nth-child(1) {
