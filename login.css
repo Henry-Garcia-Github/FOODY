@@ -69,7 +69,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  padding: 3rem;
+  padding: 2rem 3rem;
   border-radius: 2rem;
   z-index: 9999;
 }
@@ -79,7 +79,7 @@
 }
 
 .pop-up h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'inter';
   margin-bottom: 1rem;
 }

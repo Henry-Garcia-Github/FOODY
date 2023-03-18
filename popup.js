@@ -22,6 +22,7 @@ btnClosePopUp.addEventListener('click', (e) => {
     inputMDP.style.display = 'none';
     btnClosePopUp.style.display = 'none';
     popUpText.innerHTML = 'Mail de récupération de mot de passe envoyé';
+    setTimeout((container.style.opacity = 'initial'), 3000);
     container.style.opacity = 'initial';
     setTimeout(popUpClose, 3000);
   } else {
