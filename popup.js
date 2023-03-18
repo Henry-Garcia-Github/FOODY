@@ -18,9 +18,14 @@ btnOpenPopUp.addEventListener('click', (e) => {
 
 btnClosePopUp.addEventListener('click', (e) => {
   e.preventDefault();
-  inputMDP.style.display = 'none';
-  btnClosePopUp.style.display = 'none';
-  popUpText.innerHTML = 'Mail de récupération de mot de passe envoyé';
-  container.style.opacity = 'initial';
-  setTimeout(popUpClose, 3000);
+  if (inputMDP.value !== '') {
+    inputMDP.style.display = 'none';
+    btnClosePopUp.style.display = 'none';
+    popUpText.innerHTML = 'Mail de récupération de mot de passe envoyé';
+    container.style.opacity = 'initial';
+    setTimeout(popUpClose, 3000);
+  } else {
+    inputMDP.style.border = '3px solid red';
+    inputMDP.placeholder = 'Renseignez une adresse email valide';
+  }
 });
