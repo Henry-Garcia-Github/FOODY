@@ -17,7 +17,7 @@
           <h1 class="titleLogin">SE CONNECTER</h1>
           <input type="text" name="name" id="name" placeholder="Nom d'utilisateur *" />
           <input type="password" name="password" id="password" placeholder="Mot de passe *" />
-          <p class="mdp">Mot de passe oublié ?</p>
+          <a class="open-popup">Mot de passe oublié ?</a>
           <div class="button">
             <button class="btn btn-full" type="submit">
               <a href="./home.html">VALIDER</a>
@@ -29,6 +29,11 @@
         </form>
       </main>
     </div>
-    <script src="script.js"></script>
+    <div class="pop-up">
+      <h3>Merci de saisir votre adresse email</h3>
+      <input class="input-mdp" type="email" />
+      <button class="close-popup btn-popup">Valider</button>
+    </div>
+    <script src="popup.js"></script>
   </body>
 </html>

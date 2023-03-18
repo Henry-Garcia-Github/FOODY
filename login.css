@@ -1,3 +1,5 @@
+@import './style.css';
+
 .container {
   display: flex;
   justify-content: center;
@@ -11,6 +13,7 @@
   background-image: url('./assets/images/connexion-mobile-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .formConnexion {
@@ -48,4 +51,55 @@
   .bg-color {
     background-size: contain;
   }
+}
+
+.pop-up {
+  width: fit-content;
+  height: auto;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 3rem;
+  border-radius: 2rem;
+  z-index: 9999;
+}
+
+.pop-up input {
+  width: 100%;
+}
+
+.pop-up h3 {
+  font-size: 1.2rem;
+  font-family: 'inter';
+  margin-bottom: 1rem;
+}
+
+.open-popup {
+  text-align: right;
+}
+
+.btn-popup {
+  border: none;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 6rem;
+  background-color: transparent;
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  font-family: 'Spot';
+}
+
+.open-popup,
+.close-popup {
+  cursor: pointer;
 }
