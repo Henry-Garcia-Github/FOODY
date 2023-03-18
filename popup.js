@@ -3,6 +3,11 @@ const btnClosePopUp = document.querySelector('.close-popup');
 const popUp = document.querySelector('.pop-up');
 const inputMDP = document.querySelector('.input-mdp');
 const container = document.querySelector('.container');
+const popUpText = document.querySelector('.pop-up h3');
+
+function popUpClose() {
+  popUp.style.display = 'none';
+}
 
 btnOpenPopUp.addEventListener('click', (e) => {
   e.preventDefault();
@@ -13,7 +18,9 @@ btnOpenPopUp.addEventListener('click', (e) => {
 
 btnClosePopUp.addEventListener('click', (e) => {
   e.preventDefault();
-  popUp.style.display = 'none';
+  inputMDP.style.display = 'none';
+  btnClosePopUp.style.display = 'none';
+  popUpText.innerHTML = 'Mail de récupération de mot de passe envoyé';
   container.style.opacity = 'initial';
-  alert('Mail de récupération de mot de passe envoyé.');
+  setTimeout(popUpClose, 3000);
 });
