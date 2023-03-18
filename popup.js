@@ -24,7 +24,7 @@ btnClosePopUp.addEventListener('click', (e) => {
     popUpText.innerHTML = 'Mail de récupération de mot de passe envoyé';
     setTimeout((container.style.opacity = 'initial'), 3000);
     container.style.opacity = 'initial';
-    setTimeout(popUpClose, 3000);
+    setTimeout(popUpClose, 2000);
   } else {
     inputMDP.style.border = '2px solid red';
     inputMDP.placeholder = 'Adresse email non valide';
