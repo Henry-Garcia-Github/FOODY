@@ -27,7 +27,7 @@ btnClosePopUp.addEventListener('click', (e) => {
     setTimeout(popUpClose, 3000);
   } else {
     inputMDP.style.border = '2px solid red';
-    inputMDP.placeholder = 'Renseignez une adresse email valide';
+    inputMDP.placeholder = 'Adresse email non valide';
     inputMDP.classList.toggle('shake');
   }
 });
