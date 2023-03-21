@@ -68,7 +68,7 @@ p {
   overflow-y: auto;
   margin-top: 2rem;
   gap: 2rem;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 .restaurant-card {
@@ -79,10 +79,12 @@ p {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: relative;
   margin: auto;
+  animation: fadeUp 1s ease;
 }
 
 .card-header {
   position: relative;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .restaurant-favourites {
