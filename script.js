@@ -7,3 +7,4 @@ if (mediaQueryMin.matches) {
 } else {
   welcomeLinkRedirect.href = './home.html';
 }
+
