@@ -28,11 +28,24 @@ p {
   object-position: 0 0;
 }
 
+.search-bar {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+}
+
 .input {
-  background-image: url(assets/images/search-icon.svg);
   background-position: right;
   background-repeat: no-repeat;
-  width: 340px;
+  width: 100%;
+}
+
+.search-loop {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  right: 4px;
+  top: 4px;
 }
 
 .search {
@@ -103,7 +116,6 @@ p {
   background-image: url('./assets/images/favourite-icon.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  cursor: pointer;
 }
 
 .restaurant-favourites-full {
@@ -189,5 +201,15 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 100px;
+  }
+
+  .search-bar {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .search-loop {
+    right: 7px;
+    top: 7px;
   }
 }
