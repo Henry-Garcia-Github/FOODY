@@ -99,6 +99,7 @@ p {
   background-image: url('./assets/images/favourite-icon.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 
 .restaurant-favourites-full {
