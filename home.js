@@ -131,7 +131,6 @@ for (let i = 0; i < restaurants.length; i++) {
   restaurantDescription.innerHTML = restaurants[i].description;
   restaurantDistance.innerHTML = `📍 ${restaurants[i].distance}`;
   restaurantRating.innerHTML = `⭐️ ${restaurants[i].rating}`;
-  //   restaurantFavourites.src = './assets/images/favourite-icon.svg';
 
   restaurantCard.appendChild(cardHeader);
   cardHeader.appendChild(restaurantImg);
@@ -141,22 +140,22 @@ for (let i = 0; i < restaurants.length; i++) {
   cardHeader.appendChild(restaurantRating);
   restaurantCard.appendChild(restaurantFavourites);
   restaurantContainer.appendChild(restaurantCard);
+}
 
-  const like = document.querySelectorAll('.restaurant-favourites');
+const like = document.querySelectorAll('.restaurant-favourites');
 
-  for (let j = 0; j < like.length; j++) {
-    let _likes = like[j];
-    console.log(like);
+for (let j = 0; j < like.length; j++) {
+  let _likes = like[j];
+  console.log(like);
 
-    _likes.addEventListener('click', () => {
-      console.log('salut');
-      _likes.classList.toggle('restaurant-favourites-full');
-    });
+  _likes.addEventListener('click', () => {
+    console.log('salut');
+    _likes.classList.toggle('restaurant-favourites-full');
+  });
 
-    if (_likes.classList === 'restaurant-favourites-full') {
-      restaurants[j].favourites = true;
-    } else {
-      restaurants[j].favourites = false;
-    }
+  if (_likes.classList === 'restaurant-favourites-full') {
+    restaurants[j].favourites = true;
+  } else {
+    restaurants[j].favourites = false;
   }
 }
