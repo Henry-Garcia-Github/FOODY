@@ -109,26 +109,28 @@ const restaurants = [
 
 for (let i = 0; i < restaurants.length; i++) {
   const restaurantCard = document.createElement('div');
-  restaurantCard.classList.add('restaurant-card');
   const cardHeader = document.createElement('div');
-  cardHeader.classList.add('card-header');
   const restaurantImg = document.createElement('img');
-  restaurantImg.classList.add('restaurant-img');
-  restaurantImg.src = restaurants[i].img;
   const restaurantName = document.createElement('h3');
-  restaurantName.classList.add('restaurant-name');
-  restaurantName.innerHTML = restaurants[i].name;
   const restaurantDescription = document.createElement('p');
-  restaurantDescription.classList.add('restaurant-description');
-  restaurantDescription.innerHTML = restaurants[i].description;
   const restaurantDistance = document.createElement('p');
-  restaurantDistance.classList.add('restaurant-distance');
-  restaurantDistance.innerHTML = `📍 ${restaurants[i].distance}`;
   const restaurantRating = document.createElement('p');
-  restaurantRating.classList.add('restaurant-rating');
-  restaurantRating.innerHTML = `⭐️ ${restaurants[i].rating}`;
   const restaurantFavourites = document.createElement('div');
+
+  restaurantCard.classList.add('restaurant-card');
+  cardHeader.classList.add('card-header');
+  restaurantImg.classList.add('restaurant-img');
+  restaurantName.classList.add('restaurant-name');
+  restaurantDescription.classList.add('restaurant-description');
+  restaurantDistance.classList.add('restaurant-distance');
+  restaurantRating.classList.add('restaurant-rating');
   restaurantFavourites.classList.add('restaurant-favourites');
+
+  restaurantImg.src = restaurants[i].img;
+  restaurantName.innerHTML = restaurants[i].name;
+  restaurantDescription.innerHTML = restaurants[i].description;
+  restaurantDistance.innerHTML = `📍 ${restaurants[i].distance}`;
+  restaurantRating.innerHTML = `⭐️ ${restaurants[i].rating}`;
   //   restaurantFavourites.src = './assets/images/favourite-icon.svg';
 
   restaurantCard.appendChild(cardHeader);
