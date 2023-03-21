@@ -11,24 +11,25 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem 2rem;
     padding: 16px 0px;
 }
 
+.welcome p {
+    padding-left: 1rem;
+}
+
 .welcome .user {
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     object-fit: cover;
     object-position: 0 0;
 }
 
 .input {
-    
-    margin-left: 20px;
-    background-image:url(assets/images/search-icon.svg);
-    background-position:right;
-    background-repeat:no-repeat;
+    background-image: url(assets/images/search-icon.svg);
+    background-position: right;
+    background-repeat: no-repeat;
     width: 340px;
 
 }
@@ -43,21 +44,91 @@ p {
     gap: 1rem;
     margin-top: 1rem;
 }
-.food-categories::-webkit-scrollbar{
+
+.food-categories::-webkit-scrollbar {
     display: none;
 }
+
 .btn-categories {
     border-radius: 6rem;
     justify-content: space-between;
-    height:2.5rem;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
     padding: 0px 5px;
 }
 
 p {
     font-size: 1rem;
+    min-width: 88px;
 }
+
 @media screen and (min-width: 768px) {
     .food-categories {
-    width: 100%
+        width: 100%
+    }
 }
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 200vh;
+    margin-top: 2rem;
+}
+
+.restaurant-card {
+    max-width: 300px;
+    border-radius: 1rem;
+    border: 1px solid red;
+    position: relative;
+
+}
+
+.card-header {
+    position: relative;
+}
+
+.restaurant-favourites {
+    max-width: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.restaurant-img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.restaurant-name {
+    font-family: "Inter";
+    padding: 1rem;
+}
+
+.restaurant-description {
+    padding: 1rem;
+    font-size: .875rem;
+}
+
+.restaurant-distance {
+    position: absolute;
+    color: var(--bg-color);
+    background-color: #73D17D;
+    bottom: 10px;
+    right: 80px;
+    padding: 0.5rem;
+    border-radius: 6rem;
+    text-align: center;
+}
+
+.restaurant-rating {
+    position: absolute;
+    color: var(--bg-color);
+    background-color: #9BCFFF;
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    min-width: 56px;
+    border-radius: 6rem;
+    text-align: center;
 }
