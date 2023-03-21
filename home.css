@@ -46,6 +46,10 @@ p {
   margin-top: 1rem;
 }
 
+.food-categories::-webkit-scrollbar {
+  display: none;
+}
+
 .btn-categories {
   border-radius: 6rem;
   justify-content: space-between;
