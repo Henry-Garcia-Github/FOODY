@@ -154,9 +154,9 @@ for (let i = 0; i < restaurants.length; i++) {
     });
 
     if (_likes.classList === 'restaurant-favourites-full') {
-      restaurants[i].favourites = true;
+      restaurants[j].favourites = true;
     } else {
-      restaurants[i].favourites = false;
+      restaurants[j].favourites = false;
     }
   }
 }
