@@ -213,3 +213,6 @@ p {
     top: 7px;
   }
 }
+.hide {
+  display: none;
+}
