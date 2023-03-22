@@ -1,5 +1,5 @@
 const userLogin = 'admin@foody.com';
-const userName = 'Admin';
+const userName = 'Souhael';
 const userPassword = 'admin';
 const btnLogin = document.querySelector('.btn-full');
 const inputLogin = document.querySelector('#name');
