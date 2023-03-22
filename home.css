@@ -7,6 +7,13 @@ p {
   align-items: center;
 }
 
+.log-out {
+  max-width: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 4rem;
+}
+
 .welcome {
   display: flex;
   justify-content: space-between;
@@ -211,6 +218,10 @@ p {
   .search-loop {
     right: 7px;
     top: 7px;
+  }
+
+  .log-out {
+    right: 4rem;
   }
 }
 .hide {
