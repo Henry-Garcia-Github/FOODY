@@ -65,7 +65,7 @@ const restaurants = [
     distance: '800m',
     rating: 4.5,
     img: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-    favourites: false,
+    favourites: true,
     typeOfFood: ['maki', 'poke', 'japonais', 'sushis'],
   },
 ];
@@ -107,6 +107,25 @@ for (let i = 0; i < restaurants.length; i++) {
   restaurantContainer.appendChild(restaurantCard);
 }
 
+const searchInput = document.querySelector('.input');
+
+searchInput.addEventListener('keyup', restaurantFilter);
+
+function restaurantFilter() {
+  const filter = searchInput.value.toLowerCase();
+  let restaurantCard = document.querySelectorAll('.restaurant-card');
+  let restaurantName = document.querySelectorAll('.restaurant-name');
+
+  for (let i = 0; i < restaurantCard.length; i++) {
+    if (restaurantName[i].innerHTML.toLowerCase().indexOf(filter) > -1) {
+      // IF THE VALUE MATCH, WE DO NOTHING
+      restaurantCard[i].style.display = '';
+    } else {
+      restaurantCard[i].style.display = 'none';
+    }
+  }
+}
+
 const like = document.querySelectorAll('.restaurant-favourites');
 
 for (let j = 0; j < like.length; j++) {
@@ -118,27 +137,8 @@ for (let j = 0; j < like.length; j++) {
 
   if (_likes.classList === 'restaurant-favourites-full') {
     restaurants[j].favourites = true;
+    restaurantCard.classList.contains;
   } else {
     restaurants[j].favourites = false;
-  }
-}
-
-const searchInput = document.querySelector('.input');
-
-searchInput.addEventListener('keyup', restaurantFilter);
-
-function restaurantFilter() {
-  const filter = searchInput.value.toLowerCase();
-  let restaurantCard = document.querySelectorAll('.restaurant-card');
-  let restaurantName = document.querySelectorAll('.restaurant-name');
-  let restaurantTypeOfFood = document.querySelector('restaurant-type-of-food');
-
-  for (let i = 0; i < restaurantCard.length; i++) {
-    if (restaurantName[i].innerHTML.toLowerCase().indexOf(filter) > -1) {
-      // IF THE VALUE MATCH, WE DO NOTHING
-      restaurantCard[i].style.display = '';
-    } else {
-      restaurantCard[i].style.display = 'none';
-    }
   }
 }
