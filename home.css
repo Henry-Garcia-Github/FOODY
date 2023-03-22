@@ -184,8 +184,8 @@ p {
   }
 
   .welcome .user {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
   }
 
   .input {
@@ -239,46 +239,4 @@ p {
 
 .favourite-toggle img {
   max-width: 2rem;
-}
-
-input[type='checkbox'] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 80px;
-  height: 48px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative;
-}
-
-label:after {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 36px;
-  height: 36px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
-input:checked + label {
-  background: var(--primary-color);
-}
-
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
-}
-
-label:active:after {
-  width: 40px;
 }
