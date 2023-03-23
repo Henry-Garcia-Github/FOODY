@@ -175,6 +175,12 @@ const searchInput = document.querySelector(".input");
 searchInput.addEventListener("keydown", function (e) {
   console.log(e);
   const filter = searchInput.value.toLowerCase();
+
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    restaurantFilter(filter.toLowerCase());
+  }
+
   if (e.keyCode === 13) {
     event.preventDefault();
     restaurantFilter(filter.toLowerCase());
